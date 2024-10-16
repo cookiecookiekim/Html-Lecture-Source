@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend> 납품자 정보 </legend>
+            <label> 1.납품자명 : </label>
+            <input type="text">
+            <br><br>
+            <label> 2.email : </label>
+            <input type="email" placeholder="answer@naver.com">
+            <br><br>
+            <label> 3. 홈페이지 </label>
+            <input type="url" value="http://">
+            <br><br>
+            <label> 4. 지역 </label>
+            <select name="" id="">
+                <option value="">asd</option>
+                <option value="">3</option>
+                <option value="">4</option>
+            </select>
+            <br><br>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend> 납품 정보 </legend>
+            <li>
+            <label> 상품명 : </label>
+            <input type="text">
+            </li>
+            <br><br>
+            <li>
+            <label> 납품수량 : </label>
+            <input type="text" placeholder="최소 100">
+            </li>
+            <br><br>
+            <li>
+            <label> 납품등급 </label>
+            <input type="range" name="" id="">
+            </li>
+            <br><br>
+            <li>
+            <label> 기타사항 </label>
+            <input type="text" style="text-align:center; width:100px; height:50px; letter-spacing: -5px">
+            </li>
+            <br><br>
+        </fieldset>
+    </form>
+    <input type="submit" value="send message">
+    <br><br>
+    <label> 고객명 : </label>
+    <input type="text">
+    <br><br>
+    <label> 전화번호 : </label>
+    <input type="tel">
+    <br><br>
+    <label> 이메일 : </label>
+    <input type="email">
+    <br><br>
+    <label> 피자선택 : </label>
+    <input type="email" aria-placeholder="피자를 선택하세요">
+    <br><br>
+
+    <fieldset>
+        <legend> 피자 사이즈 </legend>
+        <ul type="CIRCLE">
+            <li> small </li>
+            <li> medium </li>
+            <li> large </li>
+        </ul>
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <legend> 토핑 선택 </legend>
+        <ul type="SQUARE">
+            <li> 베이컨 </li>
+            <li> 치즈 </li>
+            <li> 양파 </li>
+        </ul>
+    </fieldset>
+
+    <label> 희망 배송 시간 : </label>
+    <input type="datetime" placeholder="-- -- : -- ">
+
+    <label> 배송 시 요청 사항 : 
+        <input type="text" style="width: 100px; height: 35px;">
+    </label>
+    <br>
+    <input type="submit" value="주문하기">
+
+    <h1> 회원가입 </h1>
+    <fieldset>
+        <legend> 필수 입력 사항 </legend>
+        <label> ID </label>
+        <input type="text" placeholder="아이디 10글자 이내"> <button> 중복 확인 </button>
+        <br>
+        <label> 비밀번호 </label>
+        <input type="password" placeholder="영문,숫자,특수문자 포함 8자 이상">
+        <br>
+        <label> 비밀번호 확인 </label>
+        <input type="password">
+        <br>
+        <label> Email </label>
+        <input type="email">
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend> 추가 정보 </legend>
+        <p> 프로필 사진 </p> <input type="file" name="파일 선택"> <p> 선택된 파일 없음 </p>
+        
+        <label> 성별 : </label>
+        <input type="checkbox"> <label> 남자 </label>
+        <input type="checkbox"> <label> 여자 </label>
+        <br><br>
+        <label> 생년월일 : </label> <input type="date" name="" id="" placeholder="연도-월-일">
+        <br><br>
+        <label> 취미 </label>
+        <br>
+        <input type="checkbox"> <label> 야구 </label>
+        <input type="checkbox"> <label> 농구 </label>
+        <input type="checkbox"> <label> 축구 </label>
+        <br>
+        <input type="checkbox"> <label> 공부 </label>
+        <input type="checkbox"> <label> 음악감상 </label>
+        <br>
+        <input type="checkbox"> <label> 기타 </label> <input type="text">
+        <br><br>
+        <label> 자기 소개 </label>
+        <input type="text" style="text-align:center; width:300px; height:100px;"> </input>
+    </fieldset>
+    <button type="submit"> 회원가입 </button>
+    <button type="submit"> 다시입력 </button>
+    <button type="submit"> 이전으로 </button>
+
+    <br>
+    <table border="1">
+        <tr>
+            <th> 월 </th>
+            <th> 화 </th>
+            <th> 수 </th>
+            <th> 목 </th>
+            <th> 금 </th>
+            <th> 토 </th>
+            <th> 일 </th>
+        </tr>
+        <tr>
+            <td colspan="2"> 쌀밥 </td>
+            <td colspan="3"> 잡곡밥 </td>
+            <td> 스파게티 </td>
+            <td> 짜장면 </td>
+
+        </tr>
+        <tr>
+            <td> 불고기 </td>
+            <td> 떡갈비 </td>
+            <td> 미니돈까스 </td>
+            <td> 오징어 볶음 </td>
+            <td> 제육볶음 </td>
+            <td rowspan="2"> 피클 </td>
+            <td> 단무지 </td>
+        </tr>
+        <tr>
+            <td> 배추김치 </td>
+            <td> 깍두기 </td>
+            <td> 미소된장국 </td>
+            <td> 동치미 </td>
+            <td> 고추절임 </td>
+            <td> 짬뽕국물 </td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <td colspan="3"> 공연요금 </td>
+         </tr>
+        <tr>
+            <td> 구분 </td>
+            <td> s석 </td>
+            <td> VIP </td>
+        </tr>
+        <tr>
+            <td> 성인 </td>
+            <td> 30,000 </td>
+            <td> 50,000 </td>
+        </tr>
+        <tr>
+            <td> 청소년 </td>
+            <td> 40,000 </td>
+            <td> 60,000 </td>
+        </tr>
+        <tr>
+            <td> 소인 </td>
+            <td colspan="2"> 미취학 아동 일반 요금의 50% </td>
+        </tr>
+        <tr>
+            <td rowspan="2"> 공연시간 </td>
+            <td> 1회 </td>
+            <td> 13:00시 ~ 15:00시 </td>
+        </tr>
+        <tr>
+            <td> 2회 </td>
+            <td> 17:00시 ~ 19:00시 </td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <td width="50px"> 가 </td>
+            <td width="50px"> 나 </td>
+            <td width="50px"> 다 </td>
+            <td rowspan="4"  width="50px"> 라 </td>
+        </tr>
+        <tr>
+            <td> 마 </td>
+            <td colspan="2" rowspan="3"> 바 </td>
+        </tr>
+        <tr>
+            <td> 사 </td>
+        </tr>
+        <tr>
+            <td> 아 </td>
+        </tr>
+        <tr>
+            <td colspan="2"> 자 </td>
+            <td colspan="2"> 차 </td>
+        </tr>
+        <tr>
+            <td colspan="4"> 카 </td>
+        </tr>
+    </table>
+
+</body>
+</html>
