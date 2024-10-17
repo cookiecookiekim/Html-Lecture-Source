@@ -16,14 +16,14 @@
             <label> 2.email : </label>
             <input type="email" placeholder="answer@naver.com">
             <br><br>
-            <label> 3. 홈페이지 </label>
+            <label> 3. 홈페이지 : </label>
             <input type="url" value="http://">
             <br><br>
-            <label> 4. 지역 </label>
+            <label> 4. 지역 : </label>
             <select name="" id="">
-                <option value="">asd</option>
-                <option value="">3</option>
-                <option value="">4</option>
+                <option value="">부산</option>
+                <option value="">서울</option>
+                <option value="">인천</option>
             </select>
             <br><br>
         </fieldset>
@@ -42,18 +42,20 @@
             </li>
             <br><br>
             <li>
-            <label> 납품등급 </label>
+            <label> 납품등급 : </label>
             <input type="range" name="" id="">
             </li>
             <br><br>
             <li>
-            <label> 기타사항 </label>
-            <input type="text" style="text-align:center; width:100px; height:50px; letter-spacing: -5px">
+            <label> 기타사항 : </label>
+            <textarea name="content" cols="30" rows="5"></textarea>
             </li>
             <br><br>
         </fieldset>
     </form>
     <input type="submit" value="send message">
+
+    <form>
     <br><br>
     <label> 고객명 : </label>
     <input type="text">
@@ -61,63 +63,95 @@
     <label> 전화번호 : </label>
     <input type="tel">
     <br><br>
-    <label> 이메일 : </label>
+    <label> email : </label>
     <input type="email">
     <br><br>
     <label> 피자선택 : </label>
-    <input type="email" aria-placeholder="피자를 선택하세요">
+    <select name="menu">
+        <option value="">피자를 선택해 주세요</option>
+    </select>
     <br><br>
 
     <fieldset>
         <legend> 피자 사이즈 </legend>
-        <ul type="CIRCLE">
-            <li> small </li>
-            <li> medium </li>
-            <li> large </li>
-        </ul>
+            <input id="small" type="radio" name="size">
+            <label for="small"> small </label>
+            <br><br>
+            <input id="medium" type="radio" name="size">
+            <label for="medium"> medium </label>
+            <br><br>
+            <input id="large" type="radio" name="size">
+            <label for="large"> large </label>
     </fieldset>
-    <br><br>
+    <br>
     <fieldset>
         <legend> 토핑 선택 </legend>
-        <ul type="SQUARE">
-            <li> 베이컨 </li>
-            <li> 치즈 </li>
-            <li> 양파 </li>
-        </ul>
+            <input type="checkbox" id="beikun" name="topping" value="베이컨">
+            <label for="beikun"> 베이컨 </label>
+            <br><br>
+            <input type="checkbox" id="cheese" name="topping" value="치즈">
+            <label for="cheese"> 치즈 </label>
+            <br><br>
+            <input type="checkbox" id="onion" name="topping" value="양파">
+            <label for="onion"> 양파 </label>
+            <br><br>
+            <input type="checkbox" id="mushiroom" name="topping" value="버섯">
+            <label for="mushiroom"> 버섯 </label>
+            <br><br>
     </fieldset>
 
     <label> 희망 배송 시간 : </label>
-    <input type="datetime" placeholder="-- -- : -- ">
-
+    <input type="time">
+    <br><br>
     <label> 배송 시 요청 사항 : 
-        <input type="text" style="width: 100px; height: 35px;">
+        <textarea name="content" cols="30" rows="5"></textarea>
     </label>
     <br>
     <input type="submit" value="주문하기">
+    </form>
 
     <h1> 회원가입 </h1>
+    <form>
     <fieldset>
         <legend> 필수 입력 사항 </legend>
-        <label> ID </label>
-        <input type="text" placeholder="아이디 10글자 이내"> <button> 중복 확인 </button>
-        <br>
-        <label> 비밀번호 </label>
-        <input type="password" placeholder="영문,숫자,특수문자 포함 8자 이상">
-        <br>
-        <label> 비밀번호 확인 </label>
-        <input type="password">
-        <br>
-        <label> Email </label>
-        <input type="email">
+        <table>
+            <tr>
+                <td>ID</td>
+                <td><input name="sameid" type="text" placeholder="아이디 10글자 이내"></td>
+                <td><button name="sameid">중복 확인</button></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td colspan="2"><input style="width: 100%;" name="passwordcheck" type="password" placeholder="영문,숫자,특수문자,포함 8자 이상"></td>
+            </tr>
+            <tr>
+                <td>비밀번호 확인</td>
+                <td colspan="2"><input name="passwordcheck" type="password" style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td>Emali</td>
+                <td><input name="emel" type="email"></td>
+                <td><select name="emel" id="">
+                    <option>직접입력</option>
+                    <option>naver.com</option>
+                    <option>google.com</option>
+                </select>
+                </td>
+            </tr>
+        </table>
     </fieldset>
     <br>
     <fieldset>
         <legend> 추가 정보 </legend>
-        <p> 프로필 사진 </p> <input type="file" name="파일 선택"> <p> 선택된 파일 없음 </p>
-        
+        <label>프로필 사진</label>
+        <input type="file" name="파일 선택">
+        <br><br>
         <label> 성별 : </label>
-        <input type="checkbox"> <label> 남자 </label>
-        <input type="checkbox"> <label> 여자 </label>
+        <input type="radio" name="gender" id="man" value="남자">
+        <label for="man"> 남자</label>
+        <input type="radio" name="gender" id="woman" value="여자">
+        <label for="woman"> 여자</label>
+
         <br><br>
         <label> 생년월일 : </label> <input type="date" name="" id="" placeholder="연도-월-일">
         <br><br>
@@ -138,6 +172,7 @@
     <button type="submit"> 회원가입 </button>
     <button type="submit"> 다시입력 </button>
     <button type="submit"> 이전으로 </button>
+    </form>
 
     <br>
     <table border="1">
